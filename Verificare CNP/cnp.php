@@ -1,5 +1,3 @@
-<html>
-<body>
 <?php
 $cnp = $_POST["cnp"]; 
 $judete = array (
@@ -121,5 +119,3 @@ if ($suma % 11 == substr ( $cnp, 12, 1 ))
 else
 	echo "<br>CNP-ul a fost introdus gresit";
 ?>
-</body>
-</html>
