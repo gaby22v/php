@@ -1,6 +1,6 @@
 <?php
-#functie care forteaza descarcarea unui fisier
-#functia primeste ca parametru calea fisierului.
+#Function for file force download.
+#The function receives as parameter the path file and force the download..
 function download($fisier)
 {
 	if ((isset($fisier))&&(file_exists($fisier)))
@@ -13,6 +13,6 @@ function download($fisier)
 		echo "Fisierul nu exista!";
 	}
 }
-#folosire
-download('E:\xampp\htdocs\Encrypt and Decrypt.php')
+#how to use
+download('test.php')
 ?>
