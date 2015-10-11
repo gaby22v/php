@@ -1,15 +1,15 @@
 <?php 
-#functie pentru generare de stringuri aleatorii
-function generare($lungime = 10)
+#Function for random string
+function generate($l = 10)
  {
-    $caractere = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $sir = '';
-    for ($i = 0; $i < $lungime; $i++) 
+    $char = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $string = '';
+    for ($i = 0; $i < $l; $i++) 
     {
-        $sir .= $caractere[rand(0, strlen($caractere) - 1)];
+        $string .= $char[rand(0, strlen($char) - 1)];
     }
-    return $sir;
+    return $string;
 }
-#folosire
-echo generare(7);
+#how to use
+echo generate(7);
 ?>
