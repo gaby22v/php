@@ -1,7 +1,6 @@
 <?php
-#Conectare la baza de date folosind PDO
-#Autor: Patrascu Gabriel
-#Schimbati numele bazei de date, utilizator si parola
+#Database connection using PDO
+#Author: Patrascu Gabriel
  $host_name = "localhost"; 
  $database = "zend"; 
  $username = "zend";
@@ -12,7 +11,7 @@
  }
   catch (PDOException $e)
    {
- print "Eroare!: " . $e->getMessage() . "<br/>";
+ print "Error!: " . $e->getMessage() . "<br/>";
  die();
  }
  ?>
